@@ -8,3 +8,6 @@ nbproject/
 .DS_Store
 
 !.gitignore
+assets/
+protected/runtime/
+themes/classic/views/
