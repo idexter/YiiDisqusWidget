@@ -1,0 +1,10 @@
+.orig
+.orig.*
+.chg.*
+.rej
+.conflict~
+.idea/
+nbproject/
+.DS_Store
+
+!.gitignore
