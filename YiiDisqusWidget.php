@@ -7,29 +7,41 @@
 * @copyright 2013 idexter.ru
 */
 
+/**
+ * YiiDisqusWidget
+ * @author Anton Kucherov <idexter.ru@gmail.com>
+ */
 class YiiDisqusWidget extends CWidget
 {
+    /**
+     * @var string disqus_shortname
+     */
     public $shortname;
+    /**
+     * @var string disqus_identifier
+     */
     public $identifier;
+    /**
+     * @var string disqus_title
+     */
     public $title;
+    /**
+     * @var string disqus_url
+     */
     public $url;
+    /**
+     * @var string disqus_category_id
+     */
     public $category_id;
 
-    public $enableCounter = true;
-
+    /**
+     * @throws CHttpException
+     */
     public function init()
     {
         parent::init();
         if (empty($this->shortname)) {
             throw new CHttpException(500, Yii::t('YiiDisqusWidget', 'Parameter "disqus_shortname" is not set'));
-        }
-
-        if ($this->enableCounter === true) {
-            Yii::app()->getClientScript()->registerScriptFile(
-                "http://{$this->shortname}.disqus.com/count.js",
-                CClientScript::POS_HEAD,
-                array('async' => 'true')
-            );
         }
 
         $params = array();

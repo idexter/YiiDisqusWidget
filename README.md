@@ -16,23 +16,20 @@ Copy `YiiDisqusWidget` folder in you `protected/extensions` folder.
 
 Just add this code on your page where you need to include DISQUS.
 Simple usage:
-~~~
-[php]
+```php
 // DISQUS_SHORTNAME - You disqus_shortname from DISQUS.
 $this->widget('ext.YiiDisqusWidget.YiiDisqusWidget',array('shortname'=>'DISQUS_SHORTNAME'));
-~~~
+```
 
 You can change all off `disqus_` parameters in options array:
-~~~
-[javascript]
+```javascript
 var disqus_shortname;
 var disqus_identifier;
 var disqus_title;
 var disqus_url;
-~~~
+```
 Just add it in option array:
-~~~
-[php]
+```php
 $this->widget(
     'ext.YiiDisqusWidget.YiiDisqusWidget',
     array(
@@ -43,7 +40,7 @@ $this->widget(
         'category_id' => 'DISQUS_CATEGORY_ID',
     )
 );
-~~~
+```
 More information about DISQUS variables on [http://help.disqus.com/](http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_shortname)
 
 ##Resources

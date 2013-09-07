@@ -1,3 +1,12 @@
+<?php
+/**
+ * Template for YiiDisqusWidget
+ *
+ * @author Anton Kucherov <idexter.ru@gmail.com>
+ * @link http://idexter.ru/
+ * @copyright 2013 idexter.ru
+ */
+?>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
