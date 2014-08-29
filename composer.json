@@ -1,0 +1,23 @@
+{
+    "name": "dexterhd/yiidisquswidget",
+    "description": "This is sample widget wich can help you to add DISQUS support in to your Yii site.",
+    "keywords": ["disqus", "yii", "widget"],
+    "homepage": "https://github.com/DexterHD/YiiDisqusWidget",
+    "authors": [
+        {
+            "name": "Anton Kucherov",
+            "homepage": "http://idexter.ru/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "idexter.ru@gmail.com",
+        "issues": "https://github.com/DexterHD/YiiDisqusWidget/issues",
+        "source": "https://github.com/DexterHD/YiiDisqusWidget"
+    },
+    "require": {
+        "php": ">=5.4",
+        "yiisoft/yii": ">=1.1.15"
+    },
+    "minimum-stability": "stable"
+}
